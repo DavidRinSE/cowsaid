@@ -1,0 +1,8 @@
+<h1>COWSAID</h1>
+<form action="" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <pre>{{ cow }}</pre>
+    <input type="submit" value="Ask Cow"/>
+</form>
+<a href="{{ history }}">History</a>
